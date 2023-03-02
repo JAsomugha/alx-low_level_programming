@@ -2,8 +2,8 @@
 
 /**
  *_strcat - concatenates 2 strings
- *@dest: string
- *src: string
+ *@dest: destination string
+ *@src: source string
  *Return:lenght of string
  *
  */
