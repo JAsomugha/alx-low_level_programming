@@ -1,18 +1,30 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- *_strncpy - Copying 2 strings
- *@dest: destination string
- *@src: source string
- *@n: number of strings
+ * _strncpy - Copy a string starting from index 0 of 'dest'
+ * @dest: destination to copy string
+ * @src: source to copy string
+ * @n: number of chars to copy over
  *
- *Return: return dest
+ * Return: pointer to the resulting string
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; i < n; i++)
+	i = 0;
+
+	while (src[i] != '\0' && i < n)
+	{
 		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
