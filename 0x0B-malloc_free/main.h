@@ -6,5 +6,7 @@
 char **strtow(char *str);
 int split(char *str);
 int _strlen(char *str);
+void print_tab(char **tab);
+int main(void);
 
 #endif
